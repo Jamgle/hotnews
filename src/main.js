@@ -1,9 +1,19 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from "@/router";
+import router from "@/router"
+
+
+import Vant from 'vant'
+import 'vant/lib/index.css'
+
+import './style/index.less'
+
+Vue.use(Vant);
+
+
 
 Vue.config.productionTip = false
-import './style/index.less'
+
 new Vue({
   router,
   render: h => h(App),
